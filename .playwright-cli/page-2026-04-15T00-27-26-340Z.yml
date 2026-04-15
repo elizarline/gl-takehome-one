@@ -1,0 +1,75 @@
+- application [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - iframe [ref=e3]:
+    
+  - banner "Menu bar" [ref=e4]:
+    - generic [ref=e7]:
+      - link "Sheets home" [ref=e9] [cursor=pointer]:
+        - /url: https://docs.google.com/spreadsheets/?usp=sheets_web
+      - generic [ref=e16]:
+        - 'generic "GL Takehome: E2E Sauce Labs Test Coverage" [ref=e18]':
+          - generic [ref=e20]: "GL Takehome: E2E Sauce Labs Test Coverage"
+          - 'button "Document status: Saved to Drive." [ref=e24]':
+            - generic [ref=e29] [cursor=pointer]: Saved to Drive
+        - generic [ref=e32]:
+          - button "eliza12" [ref=e38]:
+            - img "eliza12" [ref=e43] [cursor=pointer]
+          - generic [ref=e44]:
+            - button "Share. Anyone with the link. Anyone who has the link can access. No sign-in required." [disabled] [ref=e45]: Share
+            - button "Quick sharing actions" [disabled] [ref=e47]
+          - link "Sign in" [ref=e51] [cursor=pointer]:
+            - /url: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://docs.google.com/spreadsheets/d/1Y8Q9MRhrlOQlxLgwZv7qlnjoj2OTOZvo6SAbxPDJjtE/edit?usp%3Dsharing&followup=https://docs.google.com/spreadsheets/d/1Y8Q9MRhrlOQlxLgwZv7qlnjoj2OTOZvo6SAbxPDJjtE/edit?usp%3Dsharing&ltmpl=sheets&ec=GAZAmwI
+    - generic [ref=e52]:
+      - menubar [ref=e54]:
+        - menuitem "File" [ref=e55] [cursor=pointer]
+        - menuitem "Edit" [ref=e56] [cursor=pointer]
+        - menuitem "View" [ref=e57] [cursor=pointer]
+        - menuitem "Insert" [disabled] [ref=e58]
+        - menuitem "Format" [disabled] [ref=e59]
+        - menuitem "Data" [ref=e60] [cursor=pointer]
+        - menuitem "Tools" [ref=e61] [cursor=pointer]
+        - menuitem "Extensions" [disabled] [ref=e62]
+        - menuitem "Help" [ref=e63] [cursor=pointer]
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - toolbar "Search the menus (Option+/)" [ref=e66]:
+            - combobox "Menus" [ref=e68]
+          - toolbar "Main" [ref=e69]:
+            - button "Print (⌘P)" [ref=e70] [cursor=pointer]
+            - button "Filter views" [ref=e75] [cursor=pointer]
+            - combobox "Zoom" [ref=e84] [cursor=pointer]:
+              - option "Zoom list. 100% selected." [selected] [ref=e87]:
+                - textbox "Zoom" [ref=e88]: 100%
+            - button "Mode" [ref=e92] [cursor=pointer]:
+              - generic [ref=e93]: View only
+        - toolbar "Mode and view" [ref=e96]:
+          - button "Hide the menus (Ctrl+Shift+F)" [ref=e97] [cursor=pointer]
+    - generic [ref=e104]:
+      - generic "Name box (⌘ + J)" [ref=e105]:
+        - textbox [ref=e106]: A1
+        - button "Name box menu button. Select one of the menu items to navigate to its corresponding named range." [ref=e108] [cursor=pointer]
+      - textbox [ref=e124]
+  - generic [ref=e127]:
+    - toolbar [ref=e142]:
+      - generic [ref=e145]:
+        - textbox "Table Name" [ref=e147]
+        - button "Table menu" [ref=e149] [cursor=pointer]
+        - button "Views" [ref=e156] [cursor=pointer]
+    - navigation "Sheet tab bar" [ref=e179]:
+      - toolbar [ref=e180]:
+        - button "All Sheets" [ref=e181] [cursor=pointer]
+      - toolbar [ref=e188]:
+        - button "Sheet1" [ref=e189]:
+          - generic [ref=e193]: Sheet1
+      - toolbar [ref=e197]
+  - generic [ref=e198]:
+    - textbox [active]
+  - link "Turn on screen reader support" [ref=e199] [cursor=pointer]:
+    - /url: "#"
+  - textbox [ref=e200]
+  - region [ref=e201]: To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slash
+  - region
+  - generic [ref=e202]: eliza12 has joined the document.
+  - iframe [ref=e204]:
+    

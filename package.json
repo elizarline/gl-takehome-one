@@ -1,0 +1,23 @@
+{
+  "name": "gl-takehome-one",
+  "version": "1.0.0",
+  "description": "sauce demo files",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elizarline/gl-takehome-one.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/elizarline/gl-takehome-one/issues"
+  },
+  "homepage": "https://github.com/elizarline/gl-takehome-one#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
