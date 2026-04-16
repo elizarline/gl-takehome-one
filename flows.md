@@ -10,6 +10,6 @@
 | | Verify "Logout" | Tap option | User is logged out | ✅ | ✅ | |
 | Inventory Items | Verify all primary item card actions | - Tap item card - Verify item page loads | | ✅ | ✅ | |
 | | | - Add to Cart - Verify item in card + cart icon added/updated - Use menu → reset to clear cart - Refresh page | Items can be added to cart from item inventory page | ✅ | ✅ | ℹ️ Menu → Reset App State is specific to resetting the state of the cart. Recommend updating title for clarity. |
-| | Verify all primary item page actions | - Load item detail page - Verify expected item data is present - Add item to cart - Remove item from cart - Cart badge is updated | Items can be viewed, added and removed from cart via item detail page | ✅ | ✅ | |
+| | Verify all primary item page actions | - Load item detail page - Verify expected item data is present - Add item to cart - Remove item from cart - Cart badge is updated | Items can be viewed, added and removed from cart via item detail page | ✅ | ✅ |data-test IDs for these items relate to the title. Tests will fail if these values ever change |
 | Cart | Verify basic actions in Cart | - Add item/s to cart - Go to cart - Remove items from cart | Items can be added to cart, viewed in cart, and removed from cart | ✅ | ✅ | |
 | Error Cases | TBA later | | | ❌ | ❌ | ℹ️ Focusing on P1/BAT test coverage only for phase 1 testing |
