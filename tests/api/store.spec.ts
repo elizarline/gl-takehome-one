@@ -4,7 +4,7 @@ import type { Order } from './types';
 test.describe('Store endpoints', () => {
 
   test('GET /store/inventory — returns status-to-count map', async ({ request }) => {
-    const response = await request.get('/store/inventory');
+    const response = await request.get('store/inventory');
 
     expect(response).toBeOK();
 
@@ -18,7 +18,7 @@ test.describe('Store endpoints', () => {
   });
 
   test('POST /store/order — places an order for a pet', async ({ request, createdPet }) => {
-    const response = await request.post('/store/order', {
+    const response = await request.post('store/order', {
       data: {
         petId: createdPet.id!,
         quantity: 1,
@@ -38,7 +38,7 @@ test.describe('Store endpoints', () => {
 
   test('GET /store/order/{id} — retrieves a placed order', async ({ request, createdPet }) => {
     // Create an order to retrieve
-    const createRes = await request.post('/store/order', {
+    const createRes = await request.post('store/order', {
       data: {
         petId: createdPet.id!,
         quantity: 1,
@@ -48,7 +48,7 @@ test.describe('Store endpoints', () => {
     });
     const created = await createRes.json() as Order;
 
-    const getRes = await request.get(`/store/order/${created.id}`);
+    const getRes = await request.get(`store/order/${created.id}`);
     expect(getRes).toBeOK();
 
     const order = await getRes.json() as Order;
@@ -57,12 +57,12 @@ test.describe('Store endpoints', () => {
   });
 
   test('DELETE /store/order/{id} — deletes an order', async ({ request, createdPet }) => {
-    const createRes = await request.post('/store/order', {
+    const createRes = await request.post('store/order', {
       data: { petId: createdPet.id!, quantity: 1, status: 'placed', complete: false },
     });
     const created = await createRes.json() as Order;
 
-    const deleteRes = await request.delete(`/store/order/${created.id}`);
+    const deleteRes = await request.delete(`store/order/${created.id}`);
     expect(deleteRes.status()).toBe(200);
   });
 
