@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import { PETSTORE_BASE_URL, PETSTORE_API_KEY } from './tests/constants';
 
 /**
  * Read environment variables from file.
@@ -47,6 +48,20 @@ export default defineConfig({
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
+    },
+
+    /* Petstore API tests — no browser, runs headlessly and fast */
+    {
+      name: 'api',
+      testDir: './tests/api',
+      use: {
+        baseURL: PETSTORE_BASE_URL,
+        extraHTTPHeaders: {
+          'api_key': PETSTORE_API_KEY,
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+      },
     },
 
     /* Test against mobile viewports. */
