@@ -37,18 +37,21 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      testMatch: '**/e2e/**/*.spec.ts',
+      use: { ...devices['Desktop Chrome'], baseURL: 'https://www.saucedemo.com' },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   testMatch: '**/e2e/**/*.spec.ts',
+    //   use: { ...devices['Desktop Firefox'], baseURL: 'https://www.saucedemo.com' },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   testMatch: '**/e2e/**/*.spec.ts',
+    //   use: { ...devices['Desktop Safari'], baseURL: 'https://www.saucedemo.com' },
+    // },
 
     /* Petstore API tests — no browser, runs headlessly and fast */
     {

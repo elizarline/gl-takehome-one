@@ -1,5 +1,4 @@
 import { test as base } from '@playwright/test';
-import { PETSTORE_BASE_URL } from '../constants';
 import type { Pet } from './types';
 
 type ApiFixtures = {
@@ -14,7 +13,7 @@ type ApiFixtures = {
  */
 export const test = base.extend<ApiFixtures>({
   createdPet: async ({ request }, use) => {
-    const response = await request.post(`${{PETSTORE_BASE_URL}}/pet`, {
+    const response = await request.post('/pet', {
       data: {
         name: 'Fixture Pet',
         photoUrls: ['https://example.com/pet.jpg'],
@@ -27,7 +26,7 @@ export const test = base.extend<ApiFixtures>({
     await use(pet);
 
     // Teardown — always runs, even if the test failed
-    await request.delete(`${PETSTORE_BASE_URL}/pet/${pet.id}`);
+    await request.delete(`/pet/${pet.id}`);
   },
 });
 
