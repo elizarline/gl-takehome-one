@@ -25,7 +25,7 @@ E2E UI tests utilize Playwright
 
 --------------------
 # Running API Tests
-TBA
+See [api-tests.md](https://github.com/elizarline/gl-takehome-one/edit/main/api-tests.md)
 
 --------------------
 # What needs are met in this repository
